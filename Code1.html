@@ -1,0 +1,97 @@
+<!DOCTYPE html SYSTEM "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--changes-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <script type = "text/css">
+        #testing {
+            width:500px;
+            margin-left: auto ;
+  margin-right: auto ;
+        }
+        #circle2{
+          width:10px;
+        }
+        svg {
+margin: 1.5em auto;
+max-width: 100%;
+display: block;
+}
+    </script>
+</head>  
+    <body>
+        <div style="text-align:start;">
+            <svg width="700" height="550">
+            <g id="Background" style="fill-rule:nonzero;clip-rule:nonzero;stroke:#000000;stroke-miterlimit:4;">
+                <radialGradient id="aigrd1" cx="376.6831" cy="541.9688" r="814.0695" fx="376.6831" fy="541.9688" gradientTransform="matrix(0.9978 0 0 0.9192 1.1528 44.8691)" gradientUnits="userSpaceOnUse">
+                    <stop  offset="0" style="stop-color:#FFFFFF"/>
+                    <stop  offset="0.3427" style="stop-color:#472EBF"/>
+                    <stop  offset="0.6124" style="stop-color:#262044"/>
+                    <stop  offset="1" style="stop-color:#000000"/>
+                </radialGradient>
+                <path style="fill:url(#aigrd1);stroke:none;" d="M900,1000H0V0h900v1000z"/>
+            </g> <!-- Defining the background using radial gradients coordinate-->
+              <text x="300" y="400" text-anchor="middle" font="50pt Verdana" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 50pt; line-height: normal; font-family: Verdana; opacity: 1;" font-weight="bold" opacity="1"><tspan dy="4.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">SvG</tspan></text>
+            <circle id="circle1" r="10" cx="77" cy="90" fill="blue" > <!-- Creating first circle-->
+                <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="5s"
+                    type="rotate"
+                    from="0 50 70"
+                    to="360 60 70"
+                    repeatCount="indefinite" 
+                />
+            </circle>
+            
+            <circle id="circle2" r="10" cx="66" cy="92" fill="green" > <!-- Creating second circle-->
+                <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="5s"
+                    type="rotate"
+                    from="360 50 80"
+                    to="0 60 80"
+                    repeatCount="indefinite" 
+                />
+            </circle>
+            <circle id="circle3" r="10" cx="30" cy="80" fill="pink" > <!-- Creating third circle-->
+                <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="5s"
+                    type="rotate"
+                    from="360 60 100"
+                    to="0 50 100"
+                    repeatCount="indefinite" 
+                />
+                
+            </circle>
+            <circle id="circle4" r="10" cx="40" cy="80" fill="tomato" > <!-- Creating fourth circle--> 
+                <animateTransform
+                    attributeName="transform"
+                    begin="0s"
+                    dur="5s"
+                    type="rotate"
+                    from="0 50 100"
+                    to="360 60 100"
+                    repeatCount="indefinite" 
+                /> </circle>
+           <!--<animateMotion 
+                xlink:href="#circle1"
+                dur="5s"
+                begin="0s"
+                fill="freeze"
+                repeatCount="indefinite">
+                <mpath xlink:href="#motionPath1" /></animateMotion>-->
+           <!-- <animateMotion 
+                xlink:href="#circle"
+                dur="5s"
+                begin="0s"
+                fill="freeze"
+                repeatCount="indefinite">
+                <mpath xlink:href="#motionPath" /></animateMotion>-->
+              
+        </svg>
+        </div>
+    </body>
+</html>
